@@ -1,3 +1,22 @@
+ul div li {
+  display: inline-flex;
+  padding-top: 10.5px;
+  padding-left: 30.5px;
+}
+
+ul div a {
+  display: inline;
+  float: right;
+  height: 50px;
+  padding-top: 10.5px;
+  width: 50px;
+  text-align: center;
+}
+
+a:hover {
+  background-color: #276678;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -7,10 +26,10 @@ ul {
   padding: 0;
 }
 
-ul li {
+ul div {
   cursor: pointer;
   position: relative;
-  padding: 12px 8px 12px 40px;
+  height: 50px;
   background: #eee;
   font-size: 18px;
   transition: 0.2s;
@@ -22,22 +41,25 @@ ul li {
   user-select: none;
 }
 
-ul li:nth-child(odd) {
+ul div:nth-child(odd) {
   background: #f9f9f9;
 }
 
-ul li:hover {
+ul div:hover {
   background: #ddd;
 }
 
-ul li.checked {
+ul div.checked {
   background: #276678;
   color: #fff;
   text-decoration: line-through;
+  text-decoration-skip: edges;
+  
+  
 }
 
-ul li.checked::before {
-  content: '';
+ul div.checked::before {
+  content: "";
   position: absolute;
   border-color: #fff;
   border-style: solid;
@@ -73,7 +95,7 @@ img {
 }
 
 .header:after {
-  content: '';
+  content: "";
   display: table;
   clear: both;
 }

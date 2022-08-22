@@ -57,6 +57,7 @@ input.empty {
   background-color: #fff !important;
 }
 .navbar{
+  width: 100%;
   position: fixed;
   top: 0;
   height: 54px;
